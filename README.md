@@ -3,12 +3,15 @@
 This is a template project for a website using vite. It also has several additional features to aid in rapid development and work with other developers. Additionally, developers can optionally use Tailwind, and a GitHub action is included to build the site using tree shaking, generating individual CSS and JS files for each HTML file, so you don't have to worry about unused code bogging down page load times. Additionally, an example is provided of adding custom colors to use with Tailwind's utility classes.
 
 ## Basic Commands
+
 - `npm run dev`: Type this command into the terminal to see changes live while working in your development environment.
 - `npm run dev-tailwind`: Same as above, but to be used if you are using TailwindCSS.
 - `npm run tidy`: Standardize file formatting throughout the project to minimize merge conflicts.
-- `npm run build`: Used to build the site into what would be served via your chosen web-hosting service.
+- `npm run tidy-tailwind`: Remove unused Tailwind classes that you may have made while styling.
+- `npm run build`: Used to build the site into what would be served via your chosen web-hosting service. Will create unique JS and CSS files for each page to gaurantee that they only acces the content that they use. Unused CSS classes and JS remain in the development environment and are not used.
 
 ## File Organization
+
 - You can make your own CSS files to reference in src/styles.
 - You can store scripts in src/scripts.
 - Except for the homepage, each page is a folder. Main page folders such as about and faq are in src. Within each folder is a index.html to create a clean URL. (example.com/about.html -> example.com/about/)
