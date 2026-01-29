@@ -1,6 +1,6 @@
 # [TITLE]
 
-This is a template project for a website using vite. It also has several additional features to aid in rapid development and work with other developers. Additionally, developers can optionally use Tailwind, and a GitHub action is included to build the site using tree shaking, generating individual CSS and JS files for each HTML file, so you don't have to worry about unused code bogging down load time. Additionally, an example is provided of adding custom colors to use with Tailwind's utility classes.
+This is a template project for a website using vite. It also has several additional features to aid in rapid development and work with other developers. Additionally, developers can optionally use Tailwind, and a GitHub action is included to build the site using tree shaking, generating individual CSS and JS files for each HTML file, so you don't have to worry about unused code bogging down page load times. Additionally, an example is provided of adding custom colors to use with Tailwind's utility classes.
 
 ## Basic Commands
 - `npm run dev`: Type this command into the terminal to see changes live while working in your development environment.
