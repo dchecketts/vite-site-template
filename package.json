@@ -8,13 +8,11 @@
     "build": "tailwindcss -i ./src/styles/tailwind-input.css -o ./src/styles/tailwind.css && vite build",
     "preview": "vite preview",
     "dev-tailwind": "concurrently \"vite\" \"tailwindcss -i ./src/styles/tailwind-input.css -o ./src/styles/tailwind.css --watch\"",
-    "tidy": "prettier --write \"./**/*.{js,css,html}\" --ignore-path .gitignore",
-    "prepare": "husky"
+    "tidy": "prettier --write \"./**/*.{js,css,html}\" --ignore-path .gitignore"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.23",
     "concurrently": "^9.2.1",
-    "husky": "^9.1.7",
     "postcss": "^8.5.6",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",

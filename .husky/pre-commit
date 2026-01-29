@@ -1,2 +1,0 @@
-#!/bin/sh
-"C:/Program Files/nodejs/npm.cmd" run tidy
