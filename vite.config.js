@@ -14,10 +14,12 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: Object.fromEntries(
-        glob.sync('src/**/*.html').map((file) => [
-          relative('src', file).slice(0, -extname(file).length),
-          resolve(__dirname, file),
-        ])
+        glob
+          .sync('src/**/*.html')
+          .map((file) => [
+            relative('src', file).slice(0, -extname(file).length),
+            resolve(__dirname, file),
+          ])
       ),
     },
   },

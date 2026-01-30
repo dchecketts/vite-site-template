@@ -28,4 +28,5 @@
   },
   "lint-staged": {
     "*.{js,html,md,css}": "prettier --write"
+  }
 }
