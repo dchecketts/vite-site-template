@@ -17,7 +17,10 @@ async function initHeaderFooter() {
   }
 
   function createFooter() {
-    return `<p>Footer</p>`;
+    return `
+    <footer>
+      <p>Footer</p>
+    </footer>`;
   }
 
   if (header) header.outerHTML = createHeader();
