@@ -15,17 +15,19 @@ This is a template. It uses vite to bundle and build the site based on files in 
 
 - `npm run dev`: Run an instance that updates live to see what your changes to HTML, CSS, and JS do to the site.
 - `npm run tidy`: Format the code with Prettier.
-- `npm run build`: Bundle and build the site.
 
 - `npm run dev-tailwind`: Same as the `dev` version, but for working with TailwindCSS.
 - `npm run tidy-tailwind`: Same as `tidy`, but for TailwindCSS.
 
+- `npm run build`: Bundle and build the site, as well as minimize and consolidate all CSS (Including Tailwind) and JS.
+
 ## File Organization
 
-- CSS files are stored in src/styles.
-- JS is stored in src/scripts.
-- Except for the homepage, each page is a folder.
+- CSS files are stored in **src/styles**.
+- JS is stored in **src/scripts**.
+- _Except_ for the homepage, each page is a folder.
 - Main page folders such as "About" or "FAQ" are folders within src. Inside each folder is an index.html to create a clean URL. (i.e. example.com/about/ instead of example.com/about.html)
+- Images go under **src/public/images**. Vite finds the public directory and then copies it's contents directly to the dist directory. Images can be linked to on a page by refering to them as if they were _directly_ in the src directory. This works in both `dev` commands, as well as the finalized `build`.
 
 ## Fixes
 
